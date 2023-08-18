@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import CheckDomain from './pages/CheckDomain';
-import Design from './pages/Design';
+import Home from './pages/home/Home';
+import Design from './components';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <CheckDomain />,
+    element: <Home />,
   },
   {
     path: '/design',

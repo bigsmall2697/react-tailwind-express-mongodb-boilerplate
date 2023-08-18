@@ -33,7 +33,7 @@ async function main() {
     app.use(
       express.json({
         limit: "1mb",
-      })
+      }),
     );
 
     app.use(cors());
@@ -43,7 +43,7 @@ async function main() {
     app.use(
       pino({
         logger,
-      })
+      }),
     );
 
     app.get("/health", (req, res) => {

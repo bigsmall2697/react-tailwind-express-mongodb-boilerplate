@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { BriefcaseIcon, CalendarIcon, CheckIcon, ChevronDownIcon, LinkIcon, MapPinIcon, PencilIcon } from '@heroicons/react/20/solid';
 import { Menu, Transition } from '@headlessui/react';
-import { classNames } from '../../utils';
+import classNames from 'classnames';
 
 export default function Headings() {
   return (

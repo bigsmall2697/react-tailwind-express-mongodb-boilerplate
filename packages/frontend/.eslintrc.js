@@ -21,6 +21,12 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
     'no-console': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
+    'prettier/prettier': [
+      'off',
+      {
+        endOfLine: 'off',
+      },
+    ],
   },
   settings: {
     react: {

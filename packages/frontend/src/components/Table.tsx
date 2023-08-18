@@ -49,10 +49,10 @@ export default function Table<T>({ title, subtitle, onAdd, columns, data }: Tabl
               </thead>
               <tbody className='divide-y divide-gray-200'>
                 {data.map((item, index) => (
-                  <tr key={(item as any).id || index}>
+                  <tr key={(item as { id: string }).id || index}>
                     {columns.map((col) => (
                       <td className='whitespace-normal py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0' key={col.field || col.label}>
-                        {col.render ? col.render(item) : col.field ? (item as any)[col.field] : null}
+                        {col.render ? col.render(item) : col.field ? (item as { [key: string]: string })[col.field] : null}
                       </td>
                     ))}
                   </tr>

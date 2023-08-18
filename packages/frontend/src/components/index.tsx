@@ -1,4 +1,4 @@
-import { Layout } from '../../Layout';
+import { Layout } from './Layout';
 import Alert from './Alert';
 import Card from './Card';
 import Forms from './Forms';
